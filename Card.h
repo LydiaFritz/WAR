@@ -12,6 +12,7 @@ private:
 	string suit;
 public:
 	Card(int, string);
+	Card();
 	int getValue()const;
 	string getSuit()const;
 

@@ -2,6 +2,12 @@
 
 Card::Card(int v, string s):value(v), suit(s) {}
 
+Card::Card()
+{
+	value = 0;
+	suit = "";
+}
+
 int Card::getValue()const {
 	return value;
 }
