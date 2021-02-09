@@ -2,6 +2,7 @@
 #include "Card.h"
 #include "Deck.h"
 
+
 using namespace std;
 
 int main() {
@@ -12,6 +13,7 @@ int main() {
 	while (!myDeck.isEmpty()) {
 		Card c = myDeck.dealCard();
 		p1.push_back(c);
+		Card c = myDeck.dealCard();
 		p2.push_back(c);
 	}
 
@@ -32,8 +34,10 @@ int main() {
 		//get a card from each player
 		Card c1, c2;
 		c1 = p1.back();
+		cout << "p1 plays " << c1 << ' ';
 		p1.pop_back();
 		c2 = p2.back();
+		cout << "and p2 plays " << c2 << endl;
 		p2.pop_back();
 		if (c1 > c2)
 		{
@@ -55,7 +59,7 @@ int main() {
 		for (int i = 0; i < p2.size(); i++)
 			cout << p2[i] << ' ';
 		cout << endl;
-
+		
 
 	} while (!p1.empty() && !p2.empty());
 
