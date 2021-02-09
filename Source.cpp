@@ -13,7 +13,7 @@ int main() {
 	while (!myDeck.isEmpty()) {
 		Card c = myDeck.dealCard();
 		p1.push_back(c);
-		Card c = myDeck.dealCard();
+		c = myDeck.dealCard();
 		p2.push_back(c);
 	}
 
